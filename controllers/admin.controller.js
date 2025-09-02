@@ -1,4 +1,6 @@
+const { model } = require("../config/db");
 const Admin = require("../models/admin.model");
+const Order = require("../models/order.model");
 
 const addAdmin = async (req, res) => {
   try {
@@ -38,7 +40,14 @@ const addAdmin = async (req, res) => {
 
 const getAdmins = async (req, res) => {
   try {
-    const admins = await Admin.findAll();
+    const admins = await Admin.findAll({
+      include: [
+        {
+          model: Order,
+          through: {attributes: []}
+        }
+      ]
+    });
     res.status(200).send(admins);
   } catch (error) {
     console.log(error);
