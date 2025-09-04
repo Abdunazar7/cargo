@@ -5,8 +5,11 @@ const adminRouter = require("./admin.routes");
 const orderRouter = require("./order.routes");
 const operationRouter = require("./operation.routes");
 const reportRouter = require("./report.routes");
+const authRouter = require("./auth.routes")
 
 const router = require("express").Router();
+
+router.use("/auth", authRouter)
 
 router.use("/clients", clientRouter);
 router.use("/status", statusRouter);
