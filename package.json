@@ -4,7 +4,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch app.js",
+    "dev": "cross-env NODE_ENV=development secret=maxfiy node --watch app.js",
+    "prod": "cross-env NODE_ENV=production prod_secret=12345 node app.js",
     "start": "node app.js"
   },
   "keywords": [],
@@ -15,6 +16,8 @@
     "bcrypt": "^6.0.0",
     "config": "^4.1.1",
     "cookie-parser": "^1.4.7",
+    "cross-env": "^10.0.0",
+    "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "pg": "^8.16.3",

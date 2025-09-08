@@ -12,7 +12,7 @@ const creatorGuard = require("../middlewares/guards/creator.guard");
 const roleGuard = require("../middlewares/guards/role.guard");
 
 router.post("/",  authGuard, creatorGuard, addAdmin);
-router.get("/", authGuard, roleGuard("owner"), getAdmins);
+router.get("/", authGuard, getAdmins);
 router.get("/:id", authGuard, selfGuard, getOneAdmin);
 router.put("/:id", updateAdmin);
 router.delete("/:id", deleteAdmin);

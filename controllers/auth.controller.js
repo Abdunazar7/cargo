@@ -18,7 +18,7 @@ const login = async (req, res) => {
     const verifyPassword = await bcrypt.compare(password, admin.password);
     if (!verifyPassword) {
       return sendErrorResponse(
-        { message: "Email yoki password noto'g'ri" },
+        { message: "Email yoki password noto'g'ri"},
         res,
         401
       );
@@ -38,6 +38,26 @@ const login = async (req, res) => {
       maxAge: config.get("cookie_refresh_token_time"),
       httpOnly: true,
     });
+
+    // // uncaughtException
+
+    // try{
+    //   setTimeout(() => {
+    //     throw new Error("uncaughtException exapmle")
+    //   }, 1000);
+    // }catch(error){
+    //   console.log(error);
+    // }
+
+
+    // // unHandledRejection
+
+    // new Promise((_,reject)=>{
+    //   reject(new Error("unHandledRejection example"))
+    // });
+
+    
+
     res.send({ message: "Admin logged in", accessToken: tokens.accessToken });
   } catch (err) {
     sendErrorResponse(err, res, 500);
