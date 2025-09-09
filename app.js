@@ -2,31 +2,31 @@ const express = require("express");
 const config = require("config");
 const sequelize = require("./config/db");
 const mainRouter = require("./routes/index.routes");
-const cookieParser = require('cookie-parser');
+const viewRouter = require("./routes/view.routes");
+const cookieParser = require("cookie-parser");
 const errorHandling = require("./middlewares/errors/error-handling");
-
-require("dotenv").config({path:`.env.${process.env.NODE_ENV}`})
-
-console.log(process.env.NODE_ENV);
-console.log(process.env.secret);
-console.log(config.get.secret);
-
+const exHbs = require('express-handlebars');
 
 const PORT = config.get("port") ?? 3333;
 
-// process.on('unHandledRejection', (reject)=>{
-//   console.log("unHandledRejection: ", reject);
-// })
-
-// process.on('uncaughtException', (exception)=>{
-//   console.log("uncaughtException: ", exception.message);
-//   // process.exit(1)
-// })
-
-
 const app = express();
-app.use(cookieParser())
+
 app.use(express.json());
+app.use(cookieParser());
+
+const hbs = exHbs.create({
+  defaultLayout: "main",
+  extname: "hbs"
+})
+
+app.engine('hbs', hbs.engine);
+app.set('view engine', 'hbs');
+app.set('views', './views');
+
+//serve static
+app.use(express.static("views")) // read
+
+app.use("/", viewRouter);
 app.use("/api", mainRouter);
 
 app.use(errorHandling);

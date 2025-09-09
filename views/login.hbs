@@ -1,0 +1,62 @@
+<h3>Login page</h3>
+
+<form id="login_form">
+  <div class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+      value="admin@mail.uz"
+    />
+
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password"
+      name="password"
+      value="qwerty"
+    />
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<script>
+  const form = document.getElementById("login_form");
+  form.addEventListener("submit", async(e)=>{
+    e.preventDefault();
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    try {
+      fetch("http://localhost:3000/api/auth/login", {
+        method:"POST",
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          email,
+          password
+        })
+      }).then((response)=>{
+        if (response.ok){
+            console.log('Login successfully')
+            return response.json()
+        } else {
+          console.error("Login failed")
+        }
+      }).then((data)=>{
+        console.log(data)
+        localStorage.setItem("accessToken", data.accessToken)
+      }).catch((err)=>{
+        console.error("error:",err)
+      })
+    } catch (error){
+      console.log(error);
+    }
+  })
+</script>
