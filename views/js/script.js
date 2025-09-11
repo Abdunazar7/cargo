@@ -120,3 +120,101 @@ async function refreshToken() {
     return window.location.replace(loginUrl);
   }
 }
+
+async function getOrders() {
+  let accessToken = localStorage.getItem("accessToken");
+
+  const accessTokenExpTime = getTokenExpTime(accessToken);
+  console.log("accessTokenExpTime:", accessTokenExpTime);
+  if (accessTokenExpTime) {
+    const currentTime = new Date();
+    if (currentTime < accessTokenExpTime) {
+      console.log("AccessToken faol");
+    } else {
+      console.log("Access tokenni vaqti chiqib ketdi");
+      accessToken = await refreshToken();
+    }
+  } else {
+    console.log("AccessToken chiqish vaqti berilmagan");
+  }
+
+  fetch("http://localhost:3000/api/orders", {
+    method: "GET",
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+      "Content-Type": "application/json",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        console.log("Request failed with status:", response.status);
+      }
+    })
+    .then((orderData) => {
+      console.log(orderData);
+      displayOrders(orderData);
+    })
+    .catch((error) => {
+      console.log("Error: ", error);
+    });
+}
+
+function displayOrders(orderData) {
+  const adminsList = document.getElementById("list-orders");
+  orderData.forEach((order) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = `id.${order.id}, product link-${order.product_link}, Price-$${order.sum}, quantity-${order.quantity}`;
+    adminsList.appendChild(listItem);
+  });
+}
+
+async function getOpers() {
+  let accessToken = localStorage.getItem("accessToken");
+
+  const accessTokenExpTime = getTokenExpTime(accessToken);
+  console.log("accessTokenExpTime:", accessTokenExpTime);
+  if (accessTokenExpTime) {
+    const currentTime = new Date();
+    if (currentTime < accessTokenExpTime) {
+      console.log("AccessToken faol");
+    } else {
+      console.log("Access tokenni vaqti chiqib ketdi");
+      accessToken = await refreshToken();
+    }
+  } else {
+    console.log("AccessToken chiqish vaqti berilmagan");
+  }
+
+  fetch("http://localhost:3000/api/operations", {
+    method: "GET",
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+      "Content-Type": "application/json",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        console.log("Request failed with status:", response.status);
+      }
+    })
+    .then((operData) => {
+      console.log(operData);
+      displayOpers(operData);
+    })
+    .catch((error) => {
+      console.log("Error: ", error);
+    });
+}
+
+function displayOpers(operData) {
+  const opersList = document.getElementById("list-opers");
+  operData.forEach((oper) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = `id.${oper.id}, operation date-${oper.operation_date}, Description-${oper.desc}, Admin id-${oper.adminId}, Order id-${oper.orderId}, Status id-${oper.statusId}`;
+    opersList.appendChild(listItem);
+  });
+}
