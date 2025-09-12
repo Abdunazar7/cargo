@@ -24,12 +24,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/clients",
+							"raw": "http://95.130.227.53:3003/api/clients",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"clients"
@@ -44,12 +44,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/clients",
+							"raw": "http://95.130.227.53:3003/api/clients",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"clients"
@@ -64,12 +64,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/clients/1",
+							"raw": "http://95.130.227.53:3003/api/clients/1",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"clients",
@@ -94,12 +94,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/clients/1",
+							"raw": "http://95.130.227.53:3003/api/clients/1",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"clients",
@@ -115,12 +115,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/clients/1",
+							"raw": "http://95.130.227.53:3003/api/clients/1",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"clients",
@@ -150,12 +150,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/status",
+							"raw": "http://95.130.227.53:3003/api/status",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"status"
@@ -170,12 +170,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/status",
+							"raw": "http://95.130.227.53:3003/api/status",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"status"
@@ -190,12 +190,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/status/1",
+							"raw": "http://95.130.227.53:3003/api/status/1",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"status",
@@ -220,12 +220,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/status/1",
+							"raw": "http://95.130.227.53:3003/api/status/1",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"status",
@@ -241,12 +241,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/status/1",
+							"raw": "http://95.130.227.53:3003/api/status/1",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"status",
@@ -276,12 +276,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/currency",
+							"raw": "http://95.130.227.53:3003/api/currency",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"currency"
@@ -296,12 +296,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/currency",
+							"raw": "http://95.130.227.53:3003/api/currency",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"currency"
@@ -316,12 +316,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/currency/1",
+							"raw": "http://95.130.227.53:3003/api/currency/1",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"currency",
@@ -346,12 +346,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/currency/1",
+							"raw": "http://95.130.227.53:3003/api/currency/1",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"currency",
@@ -367,12 +367,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/currency/1",
+							"raw": "http://95.130.227.53:3003/api/currency/1",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"currency",
@@ -402,12 +402,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/admins",
+							"raw": "http://95.130.227.53:3003/api/admins",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"admins"
@@ -422,12 +422,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/admins",
+							"raw": "http://95.130.227.53:3003/api/admins",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"admins"
@@ -442,12 +442,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/admins/1",
+							"raw": "http://95.130.227.53:3003/api/admins/1",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"admins",
@@ -472,12 +472,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/admins/1",
+							"raw": "http://95.130.227.53:3003/api/admins/1",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"admins",
@@ -502,12 +502,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/admins/3",
+							"raw": "http://95.130.227.53:3003/api/admins/3",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"admins",
@@ -537,12 +537,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/orders",
+							"raw": "http://95.130.227.53:3003/api/orders",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"orders"
@@ -557,12 +557,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/orders",
+							"raw": "http://95.130.227.53:3003/api/orders",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"orders"
@@ -577,12 +577,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/orders/8",
+							"raw": "http://95.130.227.53:3003/api/orders/8",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"orders",
@@ -607,12 +607,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/orders/8",
+							"raw": "http://95.130.227.53:3003/api/orders/8",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"orders",
@@ -628,12 +628,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/orders/8",
+							"raw": "http://95.130.227.53:3003/api/orders/8",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"orders",
@@ -663,12 +663,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/operations",
+							"raw": "http://95.130.227.53:3003/api/operations",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"operations"
@@ -683,12 +683,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/operations",
+							"raw": "http://95.130.227.53:3003/api/operations",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"operations"
@@ -703,12 +703,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/operations/1",
+							"raw": "http://95.130.227.53:3003/api/operations/1",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"operations",
@@ -724,12 +724,12 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/operations/1",
+							"raw": "http://95.130.227.53:3003/api/operations/1",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"operations",
@@ -745,12 +745,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/operations/1",
+							"raw": "http://95.130.227.53:3003/api/operations/1",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"operations",
@@ -780,12 +780,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/reports/bydate",
+							"raw": "http://95.130.227.53:3003/api/reports/bydate",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"reports",
@@ -801,12 +801,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/reports/more-orders",
+							"raw": "http://95.130.227.53:3003/api/reports/more-orders",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"reports",
@@ -831,12 +831,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/reports/delivered-operations",
+							"raw": "http://95.130.227.53:3003/api/reports/delivered-operations",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"reports",
@@ -852,12 +852,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/reports/top5-clients",
+							"raw": "http://95.130.227.53:3003/api/reports/top5-clients",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"reports",
@@ -873,12 +873,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://95.130.227.53:3000/api/reports/clients-in-transit",
+							"raw": "http://95.130.227.53:3003/api/reports/clients-in-transit",
 							"protocol": "http",
 							"host": [
 								"95.130.227.53"
 							],
-							"port": "3000",
+							"port": "3003",
 							"path": [
 								"api",
 								"reports",
