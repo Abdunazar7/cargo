@@ -20,7 +20,6 @@ const logger = createLogger({
     new transports.Console({ level: "debug" }),
     new transports.File({ filename: "log/error.log", level: "error" }),
     new transports.File({ filename: "log/combine.log", level: "info" }),
-    new transports.MongoDB({db: "mongodb://localhost:27017/logs", level: "debug"})
   ],
 });
 

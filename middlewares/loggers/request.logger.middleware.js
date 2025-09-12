@@ -3,7 +3,7 @@ const expressWinston = require("express-winston");
 require("winston-mongodb");
 
 const requestLogger = expressWinston.logger({
-  transports: [new winston.transports.Console(), new winston.transports.MongoDB({db: "mongodb://localhost:27017/logs", level: "debug"})],
+  transports: [new winston.transports.Console()],
   format: winston.format.combine(
     winston.format.json()
   ),

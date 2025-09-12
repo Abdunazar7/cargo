@@ -6,7 +6,7 @@ function login() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     try {
-      fetch("http://localhost:3000/api/auth/login", {
+      fetch("http://95.130.227.53:3003/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -55,7 +55,7 @@ async function getAdmins() {
     console.log("AccessToken chiqish vaqti berilmagan");
   }
 
-  fetch("http://localhost:3000/api/admins", {
+  fetch("http://95.130.227.53:3003/api/admins", {
     method: "GET",
     headers: {
       Authorization: `Bearer ${accessToken}`,
@@ -99,7 +99,7 @@ function getTokenExpTime(token) {
 async function refreshToken() {
   const loginUrl = "/login";
   try {
-    const response = await fetch("http://localhost:3000/api/auth/refresh", {
+    const response = await fetch("http://95.130.227.53:3003/api/auth/refresh", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -138,7 +138,7 @@ async function getOrders() {
     console.log("AccessToken chiqish vaqti berilmagan");
   }
 
-  fetch("http://localhost:3000/api/orders", {
+  fetch("http://95.130.227.53:3003/api/orders", {
     method: "GET",
     headers: {
       Authorization: `Bearer ${accessToken}`,
@@ -187,7 +187,7 @@ async function getOpers() {
     console.log("AccessToken chiqish vaqti berilmagan");
   }
 
-  fetch("http://localhost:3000/api/operations", {
+  fetch("http://95.130.227.53:3003/api/operations", {
     method: "GET",
     headers: {
       Authorization: `Bearer ${accessToken}`,
