@@ -6,9 +6,12 @@ const orderRouter = require("./order.routes");
 const operationRouter = require("./operation.routes");
 const reportRouter = require("./report.routes");
 const authRouter = require("./auth.routes")
+const otpRouter = require("./otp.routes")
+
 
 const router = require("express").Router();
 
+router.use("/otp", otpRouter)
 router.use("/auth", authRouter)
 
 router.use("/clients", clientRouter);
